@@ -1,0 +1,138 @@
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Oxygen&display=swap" rel="stylesheet"><div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Contact Form</h1>
+        <p id="description" class="description text-center">Please introduce yourself and reason for contact.</p>
+    </header>
+    <form id="survey-form">
+        <div class="row">
+          <div class="form-group">
+            <label id="name-label">Name</label></div>
+            <input 
+            type="text" 
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+            />
+        </div>
+      
+      <div class="row">
+        <div class="form-group">
+          <label id="company-label">Company Name</label></div>
+            <input 
+            type="text" 
+            name="company-name"
+            id="company-name"
+            class="form-control"
+            placeholder="Enter your organization's name"
+            required
+            />
+      </div>
+  
+        <div class="row">
+        <div class="form-group">
+          <label id="email-label" for="email">Company Email</label></div>
+            <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+            />
+        </div>
+        <div class="row">
+        <div class="form-group">
+            <label id="number-label" for="number">Phone<span class="clue">(Numbers Only)</span></label></div>
+            <input
+            type="number"
+            name="phone"
+            id="number"
+            min="0"
+            max="9999999999"
+            class="form-control"
+            placeholder="Phone number"
+            />
+        </div>
+      <div class="row">
+        <div class="form-group">
+        <p>Where are you located?</p>
+        </div><select id="dropdown" name="country" class="form-control" required>
+            <option disabled selected value>Please select region</option>
+            <option value="usa">United States</option>
+            <option value="japan">Japan</option>
+            <option value="africa">Africa</option>
+            <option value="namerica">North America</option>
+            <option value="samerica">South America</option>
+            <option value="asia">Asia</option>
+            <option value="australia">Australia</option>
+            <option value="europe">Europe</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+      
+      <div class="row">
+      <div class="form-group">
+    <p>What is this regarding?</p>
+        </div>
+    <label>
+        <input
+        name="user-needs"
+        value="question"
+        type="radio"
+        class="input-radio"
+        checked/>Question
+    </label>
+    <label>
+        <input
+        name="user-needs"
+        value="suggestion"
+        type="radio"
+        class="input-radio"
+        />Suggestion
+    </label>
+    <label>
+        <input
+        name="user-needs"
+        value="request"
+        type="radio"
+        class="input-radio"
+        />Request
+    </label>
+      </div>
+      
+      <div class="row">
+      <div class="form-group">
+    <p>What's the best method to reach you regarding this?<span class="clue">(Check all that apply)</span></p></div><div class="form-control">
+    <label>
+        <input
+        name="contact"
+        value="phone"
+        type="checkbox"
+        class="input-checkbox"/>Phone
+    </label>
+    <label>
+        <input
+        name="contact"
+        value="email"
+        type="checkbox"
+        class="input-checkbox"/>E-mail
+        </label></div>
+</div>
+<div class="row">
+        <div class="form-group">
+          <p>How can I help?</p></div>
+            <textarea 
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your questions or suggestions here."></textarea>
+        </div>
+
+      <div class="row">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+    </form>
+</div>
